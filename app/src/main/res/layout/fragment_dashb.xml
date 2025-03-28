@@ -1,0 +1,227 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/teal"
+        android:paddingBottom="40dp"> <!-- Padding added to avoid overlap with the navigation bar -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/btnWeekly"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="Weekly"
+                    android:background="@drawable/dashbutton"
+                    android:layout_marginEnd="10dp"/>
+
+                <Button
+                    android:id="@+id/btnMonthly"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/dashbutton"
+                    android:text="Monthly" />
+
+            </LinearLayout>
+            <!-- Container for overlapping charts -->
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+
+                <!-- Outer PieChart for Physical Activity -->
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/outerChart"
+                    android:layout_width="280dp"
+                    android:layout_height="280dp"
+                    android:layout_gravity="center" />
+
+                <!-- Inner PieChart for Cognitive Activity -->
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/innerChart"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center" />
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/innermostChart"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center" />
+
+            </FrameLayout>
+
+            <!-- Legend for Steps -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/step" />
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/red" />
+
+                <TextView
+                    android:id="@+id/legendSteps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/black"
+                    android:text="Steps Legend" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="00dp"
+                    android:background="@drawable/pastime" />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@color/YellowGreen" />
+
+                <TextView
+                    android:id="@+id/legendcognitive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/black"
+                    android:text="Cognitive Legend" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="00dp"
+                    android:background="@drawable/match2" />
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@color/PURPLE" />
+
+                <TextView
+                    android:id="@+id/legendMemoryGame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/black"
+                    android:text="Memory Legend" />
+            </LinearLayout>
+
+            <!-- Button Layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <!-- First Row: Button 1 and Button 2 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp">
+
+                    <!-- Button 1 -->
+                    <FrameLayout
+                        android:layout_width="310dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/dashbutton"
+                        android:layout_margin="8dp">
+
+                        <ImageView
+                            android:id="@+id/btnWalkBg"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="240dp"
+                            android:src="@drawable/reggs" />
+
+                        <Button
+                            android:id="@+id/btnWalk"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="30sp"
+                            android:layout_marginTop="13dp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="20dp"
+                            android:text="Register Patient" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

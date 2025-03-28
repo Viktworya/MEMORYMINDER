@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TwoPlayersActivity">
+    <TextView
+        android:id="@+id/playerTwo"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="@string/player_2"
+        android:textSize="20sp"
+        android:rotation="180"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/timeTwo"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:text="3:00"
+        android:textSize="20sp"
+        android:rotation="180"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_width="wrap_content"
+        android:text="@string/mistakes"
+        android:textSize="20sp"
+        android:rotation="180"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/mistakesTwo"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:text="@string/_0"
+        android:textSize="20sp"
+        android:rotation="180"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"/>
+
+    <com.example.sudokugame.SudokuBoardView
+        android:id="@+id/sudokuBoardView"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/timeTwo"
+        android:layout_centerHorizontal="true" />
+
+    <GridLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sudokuBoardView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:columnCount="3"
+        android:rowCount="3">
+
+
+        <Button
+            android:id="@+id/oneButton"
+            android:layout_width="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="@string/_1" />
+
+        <Button
+            android:id="@+id/twoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_margin="1dp"
+            android:text="@string/_2" />
+
+        <Button
+            android:id="@+id/threeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_margin="1dp"
+            android:layout_column="2"
+            android:text="@string/_3" />
+
+        <Button
+            android:id="@+id/fourButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_margin="1dp"
+            android:text="@string/_4" />
+
+        <Button
+            android:id="@+id/fiveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_margin="1dp"
+            android:text="@string/_5" />
+
+        <Button
+            android:id="@+id/sixButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_margin="1dp"
+            android:text="@string/_6" />
+
+        <Button
+            android:id="@+id/sevenButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_margin="1dp"
+            android:text="@string/_7" />
+
+        <Button
+            android:id="@+id/eightButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_margin="1dp"
+            android:text="@string/_8" />
+
+        <Button
+            android:id="@+id/nineButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_margin="1dp"
+            android:layout_column="2"
+            android:text="@string/_9" />
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/timeOne"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:text="3:00"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/playerOne"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:text="@string/player_1"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_width="wrap_content"
+        android:text="@string/mistakes"
+        android:textSize="20sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/mistakesOne"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="wrap_content"
+        android:text="@string/_0"
+        android:textSize="20sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

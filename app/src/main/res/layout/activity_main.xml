@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:src="@drawable/log"
+            tools:ignore="ContentDescription" />
+
+        <Button
+            android:id="@+id/btnDoctorLogin"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="Login"
+            android:textColor="@color/black"
+            android:background="@drawable/dashbutton"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Didn't Join yet?"
+        android:textColor="@color/black"
+        android:layout_marginEnd="16dp"
+        android:textSize="15sp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="690dp" />
+
+    <!-- Transparent button for registering a doctor -->
+    <Button
+        android:id="@+id/btnAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="677dp"
+        android:layout_marginStart="170dp"
+        android:background="@android:color/transparent"
+        android:text="Register a Doctor"
+        android:textColor="#E68ECAC8"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

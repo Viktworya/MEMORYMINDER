@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.SudokuGame.AppWidget.Container" parent="android:Widget">
+        <item name="android:id">@attr/background</item>
+        <item name="background">?android:attr/colorBackground</item>
+    </style>
+
+    <style name="Widget.SudokuGame.AppWidget.InnerView" parent="android:Widget">
+        <item name="background">?android:attr/colorBackground</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/form" >
+
+    <!-- Logo Image -->
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="52dp"
+        android:src="@drawable/log" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="268dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="40dp"
+        android:text="Login As Admin"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:hint="Username"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="@color/black"
+        tools:ignore="VisualLintTextFieldSize"
+        android:layout_marginTop="405dp"
+        android:layout_marginEnd="35dp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColorHint="@color/black"
+        tools:ignore="VisualLintTextFieldSize"
+        android:layout_marginTop="455dp"
+        android:layout_marginEnd="35dp" />
+
+    <CheckBox
+        android:id="@+id/checkboxShowPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="500dp"
+        android:text="Show Password"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="285dp"
+        android:layout_marginLeft="35dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkboxShowPassword"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        android:background="@drawable/dashbutton"
+        android:text="Login"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+</RelativeLayout>

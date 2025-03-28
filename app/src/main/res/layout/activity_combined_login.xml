@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/form" >
+
+    <!-- Logo Image -->
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="52dp"
+        android:src="@drawable/log" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="268dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginLeft="40dp"
+        android:text="Login"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:hint="Username"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="@color/black"
+        tools:ignore="VisualLintTextFieldSize"
+        android:layout_marginTop="385dp"
+        android:layout_marginEnd="35dp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColorHint="@color/black"
+        tools:ignore="VisualLintTextFieldSize"
+        android:layout_marginTop="435dp"
+        android:layout_marginEnd="35dp" />
+
+    <CheckBox
+        android:id="@+id/checkboxShowPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="480dp"
+        android:text="Show Password"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="285dp"
+        android:layout_marginLeft="35dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkboxShowPassword"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        android:background="@drawable/dashbutton"
+        android:text="Login"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Didn't Join yet?"
+        android:textColor="@color/black"
+        android:layout_marginEnd="16dp"
+        android:textSize="15sp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="690dp" />
+
+    <!-- Transparent button for registering a doctor -->
+    <Button
+        android:id="@+id/btnAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="677dp"
+        android:layout_marginStart="170dp"
+        android:background="@android:color/transparent"
+        android:text="Register a Doctor"
+        android:textColor="#E68ECAC8"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

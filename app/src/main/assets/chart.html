@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-bundle.min.js"></script>
+    <style>
+        /* Add any necessary CSS styles here */
+    </style>
+</head>
+<body>
+<div id="container" style="width: 100%; height: 400px;"></div>
+<script>
+    // Fetch data from Firebase and generate the pie chart using AnyChart
+    // Example code:
+    var data = [
+        {x: "Label 1", value: 100},
+        {x: "Label 2", value: 200},
+        {x: "Label 3", value: 300}
+    ];
+
+    anychart.onDocumentReady(function() {
+        var chart = anychart.pie(data);
+        chart.container("container");
+        chart.draw();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".patui.track.TrackFragment">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/dashb"
+        android:padding="16dp">
+
+
+        <ImageView
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/loc"/>
+        <Button
+            android:id="@+id/btnTrack"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:layout_marginTop="60dp"
+            android:textColor="@color/black"
+            android:background="@drawable/dashbutton"
+            android:layout_centerHorizontal="true"
+            android:text="TRACK"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

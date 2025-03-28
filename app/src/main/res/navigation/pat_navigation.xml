@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_dashboard">
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.memoryminder.patui.dashboard.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_physical"
+        android:name="com.example.memoryminder.patui.physical.PhysicalFragment"
+        android:label="Physical"
+        tools:layout="@layout/fragment_physical" />
+
+    <fragment
+        android:id="@+id/navigation_cognitive"
+        android:name="com.example.memoryminder.patui.cognitive.CognitiveFragment"
+        android:label="Cognitive"
+        tools:layout="@layout/fragment_cognitive" />
+
+    <fragment
+        android:id="@+id/navigation_track"
+        android:name="com.example.memoryminder.patui.track.TrackFragment"
+        android:label="Track"
+        tools:layout="@layout/fragment_track" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.memoryminder.patui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_prof" />
+</navigation>

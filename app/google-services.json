@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "317614979340",
+    "project_id": "memoryminder-ca7b8",
+    "storage_bucket": "memoryminder-ca7b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:317614979340:android:086d4ed168774e84457129",
+        "android_client_info": {
+          "package_name": "com.example.memoryminder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDp3wDQFif8kn9SRlhW9PvnDE3x4bRBPhQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">MemoryMinder</string>
+    <string name="first_name_template">First Name: %1$s</string>
+    <string name="last_name_template">Last Name: %1$s</string>
+    <string name="age_template">Age: %1$d</string>
+    <string name="username_template">Username: %1$s</string>
+    <string name="password_template">Password: %1$s</string>
+    <string name="failed_to_load_user_information">Failed to load user information</string>
+    <string name="_6">6</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+    <string name="menu">menu</string>
+    <string name="play_nagain">play \nagain</string>
+    <string name="player_1">Player 1</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_5">5</string>
+    <string name="_7">7</string>
+    <string name="_4">4</string>
+    <string name="_3">3</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="player_2">Player 2</string>
+    <string name="finish">finish</string>
+    <string name="checkSymbol">✔</string>
+    <string name="mistakes">mistakes:</string>
+    <string name="_0">0</string>
+    <string name="welcome_to_nsudoku">Welcome to \nsudoku!</string>
+    <string name="choose_your_game">choose your game:</string>
+    <string name="easy">easy</string>
+    <string name="medium">medium</string>
+    <string name="hard">hard</string>
+    <string name="_2_players">2 players</string>
+    <string name="see_source">see source</string>
+    <string name="open_app">Open App</string>
+    <string name="open_git">open git</string>
+    <string-array name="stages_array">
+        <item>Mild</item>
+        <item>Moderate</item>
+        <item>Severe</item>
+    </string-array>
+</resources>

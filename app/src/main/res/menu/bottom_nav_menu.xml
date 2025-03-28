@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/dashboard_24"
+        android:title="Dashboard" />
+
+    <item
+        android:id="@+id/navigation_module"
+        android:icon="@drawable/module"
+        android:title="Module" />
+
+    <item
+        android:id="@+id/navigation_register"
+        android:icon="@drawable/reggs"
+        android:title="Register" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/sett"
+        android:title="Profile" />
+
+
+</menu>

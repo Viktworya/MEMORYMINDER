@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/log"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/textViewAboutInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:text="Our app is dedicated to supporting patients with Alzheimer's Disease. Designed with the unique needs of Alzheimer's patients in mind, this app aims to slow down the progression of the disease through various cognitive and memory-enhancing exercises.
+By providing users with tools to improve their daily functioning and cognitive abilities, we strive to make a positive impact on their quality of life. The app includes features such as memory exercises and personalized activity tracking to help manage symptoms effectively.
+We are committed to improving the lives of those affected by Alzheimer's and providing a valuable resource for patients, caregivers, and healthcare professionals alike." />
+
+</LinearLayout>
